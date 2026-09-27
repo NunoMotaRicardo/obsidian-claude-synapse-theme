@@ -198,40 +198,12 @@ body {
 }
 
 
-/* ── Full Width Editor ────────────────────────────────────── */
+/* ── Full Width Editor ──────────────────────────────────────
+ * Obsidian sizes the editor, reading view, inline title and
+ * properties from --file-line-width, so widening the variable
+ * is enough, no overrides needed.
+ */
 
 body {
-  --file-line-width: 99999px !important;
-}
-
-.markdown-source-view.mod-cm6 .cm-sizer {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.markdown-source-view.mod-cm6 .cm-contentContainer {
-  max-width: 100% !important;
-}
-
-.markdown-preview-view .markdown-preview-sizer {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.is-readable-line-width .cm-sizer {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.is-readable-line-width .markdown-preview-sizer {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-.inline-title {
-  max-width: 100% !important;
-}
-
-.metadata-container {
-  max-width: 100% !important;
+  --file-line-width: 100%;
 }
